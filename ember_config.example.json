@@ -1,0 +1,17 @@
+{
+  "llama_server_url": "http://HOST_TAILSCALE_IP:1234/v1",
+  "lm_studio_endpoint": "http://HOST_TAILSCALE_IP:1234/v1",
+  "voice": "af_heart",
+  "google_home_webhook_key": "",
+  "sd_api_url": "http://HOST_TAILSCALE_IP:7860/sdapi/v1/txt2img",
+  "chroma_server_host": false,
+  "chroma_server_url": "http://HOST_TAILSCALE_IP:8001",
+  "downloads_folder": "",
+  "dnd_enabled": false,
+  "game_mode": false,
+  "architect_mode": false,
+  "complete_computer_control": false,
+  "system_prompt": "",
+  "ntfy_topic": "",
+  "companion_client_url": "http://CLIENT_TAILSCALE_IP:8002"
+}

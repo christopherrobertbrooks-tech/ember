@@ -1,0 +1,56 @@
+{
+  "name": "ember-vscode",
+  "displayName": "Ember Companion VS Code Extension",
+  "description": "Integrates your VS Code editor state, cursor line focus, and build errors directly into E.M.B.E.R.",
+  "version": "1.0.0",
+  "publisher": "ember-companion",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Ember Companion",
+      "properties": {
+        "ember.apiHost": {
+          "type": "string",
+          "default": "http://127.0.0.1:8000",
+          "description": "Ember API Brain server host url"
+        },
+        "ember.apiKey": {
+          "type": "string",
+          "default": "ember-secret-key-123",
+          "description": "Ember API Key"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "ember.syncWorkspace",
+        "title": "Ember: Sync Current Editor Context"
+      },
+      {
+        "command": "ember.explainCode",
+        "title": "Ember: Explain Selected Code"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.4"
+  }
+}

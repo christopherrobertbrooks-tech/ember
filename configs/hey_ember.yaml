@@ -1,0 +1,11 @@
+model_name: hey_ember
+target_phrases:
+  - "hey ember"
+  - "hi ember"
+  - "ember"
+
+n_samples: 10000 # synthetic training samples per class
+model:
+  model_type: conv_attention # new conv-attention classifier
+  model_size: small
+steps: 50000 # training steps

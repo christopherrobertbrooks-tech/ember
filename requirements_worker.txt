@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+pyautogui
+pygetwindow
+pytesseract
+pillow

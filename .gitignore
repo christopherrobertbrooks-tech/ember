@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+myenv/
+venv/
+env/
+.env
+
+# Database and Memory files
+chroma_dump.json
+companion_memory/
+*.db
+*.sqlite3
+
+# Credentials and Config
+ember_config.json
+ember_config.local.json
+ember_permissions.json
+credentials.json
+token.json
+client_secret.json
+research/
+
+# Build and Executables
+*.exe
+koboldcpp.exe
+ffmpeg.exe
+ffprobe.exe
+
+# Models and large files
+Llama Models/
+*.bin
+*.gguf
+*.pt
+*.safetensors
+*.vrm
+*.vroid
+
+# Tests and Profiling
+.pytest_cache/
+profile_results.txt
+"*.npy" 
+"*.glb" 
+"*.npy" 
+"*.glb" 
+"*.npy" 
+"*.glb" 
+"*.npy" 
+"*.glb" 
+data/features/validation_set_features.npy 
+data/features/openwakeword_features_ACAV100M_2000_hrs_16bit.npy 
+clients/ember-desktop-client/public/Amber.glb 

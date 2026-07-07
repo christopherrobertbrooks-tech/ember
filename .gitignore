@@ -53,3 +53,8 @@ profile_results.txt
 data/features/validation_set_features.npy 
 data/features/openwakeword_features_ACAV100M_2000_hrs_16bit.npy 
 clients/ember-desktop-client/public/Amber.glb 
+.env.*
+*.env
+*.pem
+*.key
+.credentials
